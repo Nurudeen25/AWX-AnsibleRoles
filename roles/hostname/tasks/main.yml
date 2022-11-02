@@ -10,5 +10,5 @@
   lineinfile:
     dest: /etc/hosts
     line: "{{ ansible_facts.default_ipv4.address }} {{ ansible_facts.hostname }}.{{ ansible_facts.fqdn }}"
-    regexp: "^127.0.0.1"
+    regexp: "^18.222.222.59"
     state: present
